@@ -1,29 +1,36 @@
-
-
 .container-fluid {
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    height: 260vh;
     width: 100%;
     background-color: #100f19;
+    
 }
 
-.pattern-cross-dots-x {
-    background-image: radial-gradient(circle, #5632b8 0%, transparent 20%), /* Cambia el color aquí */
-                      radial-gradient(circle, #5736b4 0%, transparent 20%);
-    background-size: 20px 30px; /* Ajusta el tamaño según necesites */
-    background-position: 10px 30px, 0px 0px; /* Ajusta la posición de los patrones */
+/* general */
+
+h1 {
+    color: #ffff
 }
+
+
+.pattern-cross-dots-x {
+    background-image: radial-gradient(circle, #5632b8 0%, transparent 20%),
+                      radial-gradient(circle, #5736b4 0%, transparent 20%);
+    background-size: 20px 30px; 
+    background-position: 10px 30px, 0px 0px; 
+
+}
+/* row principal */
 
 .row-principal {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
-    margin-top: 10em;
+
 }
 
-/* col descripcion principal */
 .col-descripcion-principal {
     display: flex;
     justify-content: center;
@@ -35,51 +42,56 @@
     color: rgb(180, 178, 178);
     font-family: "Nunito", sans-serif;
     text-align: center;
-    
+    margin-left: 2em;
 }
 
 h2 {
     color: #6e2584;
-    
 }
 
+.titulo  {
+    text-align: center;
+    width: 0; /* Inicialmente oculto */
+    overflow: hidden; /* Oculta el desbordamiento */
+    white-space: nowrap; /* Evita el salto de línea */
+    font-size: 3rem; /* Cambia el tamaño si lo deseas */
+    margin: 0 auto;
+    border-right: 0.15em solid #69237e; /* Efecto de cursor */
+    color: #ffff;
+    animation: typing 4s steps(18) 1s 1 normal both, blink 1s steps(1) infinite; /* Modifica el número de steps */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent; /* Parpadeo del cursor */
+    }
+  }
 
-h1 { 
-	position: relative; 
-	float: left;
-	color: #fff;
-	font-size: 3em;
-}
-
-h1 span {
-    position:absolute;
-    right:0;
-    width:0;
-    border-left: 1px solid #6e2584;
-    animation: escribir 3s steps(25) alternate;
-}
-
-@keyframes escribir {
-    from { width: 90% }
-    to { width:50% }
-}
 
 
-
-.btn-proyects{
-    width: 140px;
+.btn-proyects {
+    width: 200px;
     height: 50px;
     margin-top: 1em;
-    border:none ;
+    border: none;
     background-color: #6e2584;
     color: white;
+    cursor: pointer;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); 
 }
 
-.btn-proyects:hover{
+.btn-proyects:hover {
     box-shadow: inset 0px -4px 0px 5px rgba(255, 243, 243, 0.5);
 }
-
-
 
 .col-img {
     display: flex;
@@ -87,56 +99,159 @@ h1 span {
     align-items: center;
 }
 
-
-
 .col-img img {
-    display: flex;
-    justify-content: center;
-    max-width: 500px !important; /* Tamaño más pequeño para el círculo */
+    display: block;
+    max-width: 500px; 
     height: 400px;
     border-radius: 50%;
-    background: radial-gradient(circle, #4d0440, #63115f); /* Gradiente para efecto 3D */
-    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) 
-               translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
-    /* Oculta el contenido que sobresale del círculo */
-    background: radial-gradient(circle, #0c010a, #69237e); /* Gradiente para efecto 3D */
+    background: radial-gradient(circle, #0c010a, #69237e); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); 
 }
-
-
-
-/* row about me */
 
 .row-about-me {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    height: 100%;
+    border-top: #bb40b5 solid 1px;
+    border-bottom: #bb40b5 solid 1px;
+    box-shadow: 50px 20px 20px 50px rgba(0, 0, 0, 0.5); 
+    background-color: #0b0a11;
+    padding: 5em 0; 
+    margin-top: 15em;
 }
 
+.col-img-descripcion {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em; 
+    max-width: 30%;
+}
+
+.col-img-descripcion img {
+    max-width: 400px; 
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
 
 .col-descripcion {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 2em; 
     width: 100%;
-    height: 100vh;
-    border-top: #63115f solid 1px;
-    background-color: #100f19;
+    height: auto; 
 }
 
-.col-descripcion h1 {
-    margin-top: 2em;
-}
+.col-descripcion h1 {}
 
 .col-descripcion h3 {
+    margin-top: 10px;
     color: #fff;
     text-align: center;
+    font-size: 20px;
 }
 
 .col-descripcion p {
+    margin-top: 20px;
     color: rgb(180, 178, 178);
     text-align: center;
+    max-width: 900px; 
+    padding: 0 1em; 
+}
+
+
+
+/* row skills */
+
+.row-skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6em;
+}
+
+.col-titulo {
+    display: flex;
+    margin-top: 5em;
+}
+
+.col-herramientas {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.card-item {
+    flex: 1 1 calc(33.33% - 2em); /* Tres elementos por fila con margen */
+    margin: 1em; 
+    display: flex; /* Para centrar la tarjeta */
+    justify-content: center; /* Centrar contenido de cada tarjeta */
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d; /* Habilitar transformaciones en 3D */
+    transition: transform 0.6s ease-in-out; /* Duración y suavidad del giro */
+    background-color: transparent; /* Quitar el fondo para evitar el cambio en hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); 
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ocultar el reverso cuando no está visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.card-front img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-front {
+    display: flex;
+    background-color: #050505;
+    z-index: 2; /* Asegurar que el frente sea visible por defecto */
+}
+
+.card-back {
+    flex-direction: column;
+    background-color: #69237e;
+    transform: rotateY(180deg); /* Girar el reverso para que no sea visible inicialmente */
+}
+
+.card:hover {
+    transform: rotateY(180deg); /* Girar la tarjeta solo una vez, pasando al reverso */
+}
+
+
+
+/* row proyectos */
+
+
+.row-proyectos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10em;
 }

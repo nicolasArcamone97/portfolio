@@ -1,10 +1,9 @@
 <div class="container-fluid pattern-cross-dots-xl">
     <div class="row row-principal">
-
         <!-- Columna principal -->
         <div class="col col-descripcion-principal">
             <p style="font-size: 24px; color: white;">Hola 👋 soy </p>
-            <h1>Nicolás Arcamone <span>&#160;</span></h1>
+            <h1 class="titulo">Nicolás Arcamone <span></span></h1>
             <h2>Desarrollador Full Stack Trainee</h2>
             <p style="font-size: 15px; margin-top: 1em;">
                 Soy estudiante de Licenciatura en Informática, apasionado por la programación y siempre en busca de nuevos desafíos tecnológicos. 
@@ -12,41 +11,74 @@
             </p>
             <button class="btn-proyects">Ir a proyectos</button>
         </div>
-
         <!-- Columna de imagen -->
         <div class="col col-img">
             <img src="https://i.postimg.cc/xC100gRs/IMG-20231226-WA0039.png" alt="Foto de Nicolás Arcamone" />
         </div>
-
-
-
     </div>
 
-    <div class="row row-about-me ">
-
-        <div class="col col-img">
-            <img src="" alt="">
+    <div class="row row-about-me">
+        <div class="col col-img-descripcion">
+            <img src="https://i.postimg.cc/3wC622K5/programing-code-logo-icon-3d-render-568120-2147-1.png" alt="Icono de programación">
         </div>
-
 
         <div class="col col-descripcion">
             <h1>Sobre Mí</h1>
-            <h3>Aunque no tengo experiencia laboral formal, estoy convencido de que poseo la capacidad para enfrentar cualquier desafío.</h3>
+            
             <p>
-                Actualmente estudio en la Universidad Nacional de Hurlingham, donde me están formando tanto profesional como personalmente. Mi deseo de aprender más me ha llevado a desarrollar un perfil autodidacta, lo que complementa mi formación universitaria y me permite tener un perfil aún más completo. 
-                Estoy adentrándome en diferentes tecnologías y realizando diversos proyectos personales, donde aplico mis conocimientos y habilidades para crear soluciones innovadoras.            
-                Me apasiona el desarrollo de software y la resolución de problemas a través de la tecnología. 
-                Además de mi formación técnica, valoro la importancia del trabajo en equipo y la comunicación. Creo que colaborar con otros es fundamental para el crecimiento personal y profesional, y estoy entusiasmado por compartir ideas y aprender de la experiencia de mis compañeros.
-                Estoy siempre abierto a nuevas oportunidades y aprendizajes. ¡No dudes en contactarme si deseas colaborar, intercambiar ideas o simplemente charlar sobre tecnología y desarrollo!
+                Soy estudiante en la Universidad Nacional de Hurlingham, donde me formo profesional y personalmente. Mi deseo de aprender me ha llevado a ser autodidacta, complementando mi formación universitaria y explorando diversas tecnologías a través de proyectos personales. Me apasiona el desarrollo de software y la resolución de problemas. Valoro la importancia del trabajo en equipo y la comunicación, creyendo que colaborar es esencial para el crecimiento.
+                Estoy abierto a nuevas oportunidades y aprendizajes. ¡No dudes en contactarme para colaborar o charlar sobre tecnología!
             </p>
 
+            <div class="col col-btn">
+                <button class="btn-proyects">Contactame</button>
+            </div>
         </div>
 
-
-
-
-
     </div> 
+
+    <div class="row row-skills">
+
+        <div class="col col-titulo">
+            <h1>Herramientas</h1>
+        </div>
+
+        <div class="col-xl-12 col-herramientas">
+            <ul class="card-list">
+                <li *ngFor="let item of listLenguajes" class="card-item">
+                    <div class="card">
+                        <div class="card-front">
+                            <img [src]="item.imagen" alt="">
+                        </div>
+                        <div class="card-back">
+                            <p>{{ item.nombre }} </p>
+                            <p>{{ item.descripcion }}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="row row-proyectos">
+        <div class="col col-titulo-proyectos">
+            <h1>Proyectos</h1>
+        </div>
+
+        <div class="col col-proyectos">
+            <h2>Bookstore</h2>
+            <p>descripcion: Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+             Pariatur alias temporibus corporis beatae numquam accusamus, quisquam impedit nihil dicta magni corrupti voluptates labore, vitae quod. Optio exercitationem doloremque molestias ipsa!</p>
+            <p>Lenguajes usados: Nest js, Angular, Mysql</p>
+            <p>Github</p>
+            
+        </div>
+
+    </div>
+
+
 
 
 </div>
