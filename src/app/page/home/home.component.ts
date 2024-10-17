@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Lenguaje } from '../../interfaces/lenguaje.interface';
 import { CommonModule } from '@angular/common';
+import { Proyecto } from '../../interfaces/proyecto.interface';
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,8 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit{
 
   listLenguajes?: Lenguaje[]
+  
+  listProyectos?: Proyecto[]
 
   constructor(){
     this.listLenguajes = [
@@ -23,6 +26,18 @@ export class HomeComponent implements OnInit{
       { nombre: 'React', imagen: 'https://i.postimg.cc/Y9HKDg33/react.png', descripcion: 'Librería de JavaScript para construir interfaces de usuario' },
       { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }
     ];
+
+
+
+    
+
+
+
+
+
+
+
+
   }
 
   ngOnInit(): void {
