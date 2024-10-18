@@ -1,7 +1,7 @@
 .container-fluid {
     display: flex;
     flex-direction: column;
-    height: 280vh;
+    height: 320vh;
     width: 100%;
     background-color: #100f19;
     
@@ -224,11 +224,12 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 6em;
+    margin-top: 16em;
 }
 
 .col-titulo {
     display: flex;
+    justify-content: center;
     margin-top: 5em;
 }
 
@@ -280,7 +281,7 @@ h2 {
 .card-front img {
     width: 50px;
     height: 50px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Añadir transiciones a transformaciones y sombras */
+     /* Añadir transiciones a transformaciones y sombras */
 }
 
 .card-front {
@@ -302,31 +303,100 @@ h2 {
 
 /* row proyectos */
 
-
+/* Contenedor principal de los proyectos */
 .row-proyectos {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    margin-top: 10em;
+    margin-top: 15em;
 }
 
+/* Título de la sección de proyectos */
 .col-titulo-proyectos {
     display: flex;
     justify-content: center;
 }
 
+/* Contenedor de los proyectos */
 .col-proyectos {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    margin-top: 8em;
+}
+
+/* Cada proyecto individual */
+.row-proyecto {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para que la imagen esté arriba de la descripción */
+    justify-content: center;
+    max-width: 23%;
+    height: auto; /* Cambiar a auto si la altura debe ajustarse al contenido */
+    border-radius: 20px;
+    background-color: #050505;
+    margin: 2em;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 20px 50px rgba(3, 3, 3, 0.5);
+}
+
+/* Contenedor de la imagen del proyecto */
+.col-img-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de la imagen dentro del proyecto */
+.col-img-proyecto img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+}
+
+/* Contenedor de la descripción del proyecto */
+.col-descripcion-p {
+    display: flex;
+    flex-direction: column;
+    padding: 1em; /* Añadir algo de padding si es necesario */
+    border-radius: 0 0 20px 20px; /* Redondear solo la parte inferior si es el mismo contenedor */
+    color: #ffff;
+}
+
+/* Contenedor de los lenguajes de programación */
+.col-lenguajes {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+/* Lista de lenguajes */
+.col-lenguajes ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
     width: 100%;
 }
 
-.row-proyecto {
+/* Elementos individuales de la lista */
+.col-lenguajes li {
     display: flex;
-    justify-content: center;
-    width: 70%;
-    background-color: #050505;
+    justify-content: flex-start;
+    margin: 2em;
+    border: 1px solid #650668;
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0.5em 1em;
+    border-radius: 10px; /* Añadir bordes redondeados a los elementos de la lista */
+    color: white;
+    width: 120px;
+    height: 50px;
+    
+    box-shadow: 0px 20px 50px rgba(3, 3, 3, 0.5);
 }
-
