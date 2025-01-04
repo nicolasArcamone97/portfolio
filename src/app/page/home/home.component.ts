@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Lenguaje } from '../../interfaces/lenguaje.interface';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser} from '@angular/common';
 import { Proyecto } from '../../interfaces/proyecto.interface';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -17,7 +19,7 @@ export class HomeComponent implements OnInit{
   
   listProyectos?: Proyecto[]
 
-  constructor(){
+  constructor(@Inject(PLATFORM_ID) private platformId: Object){
     this.listLenguajes = [
       { nombre:'Nest Js', imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', descripcion: 'Lenguaje que lo usan solo los cracks' },
       { nombre: 'Java', imagen: 'https://i.postimg.cc/85RDTw59/java.png', descripcion: 'Lenguaje robusto y orientado a objetos' },
@@ -26,26 +28,14 @@ export class HomeComponent implements OnInit{
       { nombre: 'React', imagen: 'https://i.postimg.cc/Y9HKDg33/react.png', descripcion: 'Librería de JavaScript para construir interfaces de usuario' },
       { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }
     ];
-
-
-
-    
-
-
-
-
-
-
-
-
   }
 
-  ngOnInit(): void {
-      
+  ngOnInit() {
+    // Verifica si el entorno es el navegador antes de inicializar AOS
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
   }
-
-
-  
 
 
 }

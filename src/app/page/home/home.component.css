@@ -1,16 +1,5 @@
 .container-fluid {
-    display: flex;
-    flex-direction: column;
-    height: 320vh;
-    width: 100%;
     background-color: #100f19;
-    
-}
-
-/* general */
-
-h1 {
-    color: #ffff
 }
 
 
@@ -23,25 +12,10 @@ h1 {
 }
 /* row principal */
 
-.row-principal {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
 
-}
-
-.col-descripcion-principal {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.col-descripcion-principal p {
+.col .descripcion {
     color: rgb(180, 178, 178);
     font-family: "Nunito", sans-serif;
-    text-align: center;
 }
 
 h2 {
@@ -49,15 +23,12 @@ h2 {
 }
 
 .titulo  {
-    text-align: center;
     width: 0; /* Inicialmente oculto */
     overflow: hidden; /* Oculta el desbordamiento */
     white-space: nowrap; /* Evita el salto de línea */
-    font-size: 3rem; /* Cambia el tamaño si lo deseas */
-    margin: 0 auto;
     border-right: 0.15em solid #69237e; /* Efecto de cursor */
     color: #ffff;
-    animation: typing 4s steps(18) 1s 1 normal both, blink 1s steps(1) infinite; /* Modifica el número de steps */
+    animation: typing 5s steps(20) 1s 1 normal both, blink 5s steps(20) infinite; /* Modifica el número de steps */
   }
   
   @keyframes typing {
@@ -65,7 +36,7 @@ h2 {
       width: 0;
     }
     to {
-      width: 50%;
+      width: 65%;
     }
   }
   
@@ -76,145 +47,74 @@ h2 {
   }
 
   
-  /* CSS */
-  .button-58 {
-   padding: 10px 40px;
-   font-size: 18px;
-   background-color: #69237e;
-   color: #fff;
-   text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   border: 0;
-   z-index: 1;
-   user-select: none;
-   cursor: pointer;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   white-space: unset;
-   padding: .8rem 1.5rem;
-   text-decoration: none;
-   font-weight: 900;
-   transition: all 0.7s cubic-bezier(0,.8,.26,.99);
-  }
-  
-  .button-58:before {
-   position: absolute;
-   pointer-events: none;
-   top: 0;
-   left: 0;
-   display: block;
-   width: 100%;
-   height: 100%;
-   content: '';
-   transition: .7s cubic-bezier(0,.8,.26,.99);
-   z-index: -1;
-   background-color: #650668!important;
-   box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgba(223, 75, 223, 0.99) inset, -4px 0 rgba(180, 14, 196, 0.5) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-  }
-  
-  .button-58:after {
-   position: absolute;
-   pointer-events: none;
-   top: 0;
-   left: 0;
-   display: block;
-   width: 100%;
-   height: 100%;
-   content: '';
-   box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
-   transition: .7s cubic-bezier(0,.8,.26,.99);
-  }
-  
-  .button-58:hover:before {
-   box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
-  }
-  
-  .button-58:hover:after {
-   box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
-  }
-  
-  .button-58:active {
-   transform: translateY(4px);
-  }
-  
-  .button-58:active:after {
-   box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
-  }
-  
-
-
-
-.col-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* CSS  boton*/ 
+  .button-simple {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #69237e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.button-simple:hover {
+    background-color: #550e66;
+}
+
+.button-simple:active {
+    transform: translateY(2px);
+}
+
+
+
 .col-img img {
-    display: block;
-    max-width: 500px; 
-    height: 400px;
+    max-width: 100%; 
+    height: auto;
     border-radius: 50%;
     background: radial-gradient(circle, #0c010a, #69237e); 
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); 
 }
 
+
+/*  */
+
+
+
+
 .row-about-me {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
     border-top: #bb40b5 solid 1px;
     border-bottom: #bb40b5 solid 1px;
     box-shadow: 50px 20px 20px 50px rgba(0, 0, 0, 0.5); 
     background-color: #0b0a11;
-    padding: 5em 0; 
-    margin-top: 15em;
+    margin-top: 12em;
+    padding: 0;
+
 }
 
-.col-img-descripcion {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em; 
-    max-width: 30%;
+.col-about-me h1{
+    color: #ffff;
 }
 
-.col-img-descripcion img {
-    max-width: 400px; 
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+.col-about-me ul {
+    margin: 0;
+    padding: 0;
 }
-
-.col-descripcion {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2em; 
-    width: 100%;
-    height: auto; 
-}
-
-.col-descripcion h1 {}
-
-.col-descripcion h3 {
-    margin-top: 10px;
+.col-about-me li {
+    list-style: none;
+    padding: 2em;
+    margin: 2em;
+    border-top: #bb40b5 solid 1px;
+    border-bottom: #bb40b5 solid 1px;
+    box-shadow: 50px 20px 20px 50px rgba(0, 0, 0, 0.5); 
     color: #fff;
-    text-align: center;
-    font-size: 20px;
 }
 
-.col-descripcion p {
-    margin-top: 20px;
-    color: rgb(180, 178, 178);
-    text-align: center;
-    max-width: 900px; 
-    padding: 0 1em; 
-}
 
 
 
@@ -230,7 +130,8 @@ h2 {
 .col-titulo {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+
+    color: #fff;
 }
 
 .col-herramientas {
@@ -254,7 +155,7 @@ h2 {
     justify-content: center; /* Centrar contenido de cada tarjeta */
 }
 
-.card {
+.card-skill {
     width: 350px;
     height: 200px;
     position: relative;
@@ -296,7 +197,7 @@ h2 {
     transform: rotateY(180deg); /* Girar el reverso para que no sea visible inicialmente */
 }
 
-.card:hover {
+.card-skill:hover {
     transform: rotateY(180deg); /* Girar la tarjeta cuando se hace hover */
 }
 
@@ -305,98 +206,147 @@ h2 {
 
 /* Contenedor principal de los proyectos */
 .row-proyectos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
     margin-top: 15em;
+    box-shadow: 
+    30px 30px 50px 10px rgba(0.5, 0, 0, 0.5), 
+    -10px -30px 50px 10px rgba(0.5, 0, 0, 0.5);
+    color: #fff;
 }
 
-/* Título de la sección de proyectos */
-.col-titulo-proyectos {
+.card {
+    background-color: #0b0a11;
+    /* border-bottom: 15px solid #4b155c;
+    border-right: 10px solid #4b155c; */
+    box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.card p,h5 {
+    color: rgb(180, 178, 178);
+    font-family: "Nunito", sans-serif;
+}
+
+.card-header img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.col-cards {
+    margin-top: 5em;
+}
+
+
+
+.col-cards ul {
+    list-style: none;
+}
+
+.col-cards li img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* row contacto */
+
+.row-contacto {
+    margin-top: 12em;
+
+}
+
+.form {
+    position: relative;
     display: flex;
-    justify-content: center;
-}
-
-/* Contenedor de los proyectos */
-.col-proyectos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 8em;
-}
-
-/* Cada proyecto individual */
-.row-proyecto {
-    display: flex;
-    flex-direction: column; /* Cambiar a columna para que la imagen esté arriba de la descripción */
-    justify-content: center;
-    max-width: 23%;
-    height: auto; /* Cambiar a auto si la altura debe ajustarse al contenido */
-    border-radius: 20px;
-    background-color: #050505;
-    margin: 2em;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    box-shadow: 0px 20px 50px rgba(3, 3, 3, 0.5);
-}
-
-/* Contenedor de la imagen del proyecto */
-.col-img-proyecto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilo de la imagen dentro del proyecto */
-.col-img-proyecto img {
-    width: 100%;
-    height: 300px;
-    border-radius: 20px;
-    object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
-}
-
-/* Contenedor de la descripción del proyecto */
-.col-descripcion-p {
-    display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 1em; /* Añadir algo de padding si es necesario */
-    border-radius: 0 0 20px 20px; /* Redondear solo la parte inferior si es el mismo contenedor */
-    color: #ffff;
-}
-
-/* Contenedor de los lenguajes de programación */
-.col-lenguajes {
+    gap: 10px;
+    width: 60%;
+    max-width: 100%;
+    background-color: #0b0a11;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: #bb40b5 solid 1px;
+    border-bottom: #bb40b5 solid 1px;
+    box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 1em;
-}
-
-/* Lista de lenguajes */
-.col-lenguajes ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
     width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    width: 180px;
+  }
+
+
+
+/* media queries */
+@media (min-width: 400px) {
+    .col-img img {
+        max-width: 500px; /* Imagen ligeramente más pequeña */
+        height: 350px;    /* Ajustar altura proporcionalmente */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Sombras más sutiles */
+    }
+
+    .col-cards img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-/* Elementos individuales de la lista */
-.col-lenguajes li {
-    display: flex;
-    justify-content: flex-start;
-    margin: 2em;
-    border: 1px solid #650668;
-    list-style-type: none; /* Eliminar los puntos de la lista */
-    padding: 0.5em 1em;
-    border-radius: 10px; /* Añadir bordes redondeados a los elementos de la lista */
-    color: white;
-    width: 120px;
-    height: 50px;
-    
-    box-shadow: 0px 20px 50px rgba(3, 3, 3, 0.5);
+
+@media (max-width:500px) {
+    .col-img img {
+        max-width: 400px; /* Imagen ligeramente más pequeña */
+        height: 250px;    /* Ajustar altura proporcionalmente */
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); /* Sombras más sutiles */
+    }
+
+    .col-cards img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
 }
+
+

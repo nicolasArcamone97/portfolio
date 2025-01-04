@@ -1,47 +1,56 @@
 <div class="container-fluid pattern-cross-dots-xl">
-    <div class="row row-principal">
-        <!-- Columna principal -->
-        <div class="col col-descripcion-principal">
+    <div class="row row-principal d-flex justify-content-center  flex-row">
+        <div class="col col-lg-12 py-3 m-4 mt-5" style="width: 90%;">
             <p style="font-size: 24px; color: white;">Hola 👋 soy </p>
             <h1 class="titulo">Nicolás Arcamone <span></span></h1>
             <h2>Desarrollador Full Stack Trainee</h2>
-            <p style="font-size: 15px; margin-top: 1em;">
+        </div>
+        
+        <div class="col-lg-3 d-flex flex-column justify-content-center align-items-center col-img  py-3 m-4">
+            <img src="https://i.postimg.cc/xC100gRs/IMG-20231226-WA0039.png" alt="Foto de Nicolás Arcamone"  data-aos="zoom-in-right" data-aos-offset="500" data-aos-duration="500"/>
+        </div>
+
+        <div class="col col-lg-8 d-flex flex-column justify-content-center  py-3 m-4">
+            <p class="descripcion" style="font-size: 18px; margin-top: 1em;">
                 Soy estudiante de Licenciatura en Informática, apasionado por la programación y siempre en busca de nuevos desafíos tecnológicos. 
                 Me esfuerzo por mejorar continuamente mis habilidades y aportar valor en cada proyecto en el que participo.
             </p>
             
-            <button class="button-58" role="button">
+            <button class="button-simple" role="button">
                 <span class="text">Ir a Proyectos</span>
             </button>
         </div>
-        <!-- Columna de imagen -->
-        <div class="col col-img">
-            <img src="https://i.postimg.cc/xC100gRs/IMG-20231226-WA0039.png" alt="Foto de Nicolás Arcamone" />
+
+    </div>
+
+    
+    <div class="row row-about-me row d-flex justify-content-center  flex-row ">
+        <div class="col col-about-me col-lg-12 py-4 mb-4" style="width: 90%;">
+            <h1 class="text-center">Algunas cosas sobre mí</h1>
+                <ul class="d-flex flex-column ">
+                    <li data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="500"
+                    >🎓 Soy Estudiante en la Universidad Nacional de Hurlingham </li>
+                    <li data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="1000"
+                    >💻 Apasionado por el desarrollo de software y proyectos personales</li>
+                    <li data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="1500"
+                    >🤝 Valoro el trabajo en equipo y la comunicación</li>
+                    <li data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="2000"
+                    >📚 Aprendiz autodidacta, siempre explorando nuevas tecnologías</li>
+                </ul>
         </div>
     </div>
 
-    <div class="row row-about-me">
-        <div class="col col-img-descripcion">
-            <img src="https://i.postimg.cc/3wC622K5/programing-code-logo-icon-3d-render-568120-2147-1.png" alt="Icono de programación">
-        </div>
 
-        <div class="col col-descripcion">
-            <h1>Sobre Mí</h1>
-            
-            <p>
-                Soy estudiante en la Universidad Nacional de Hurlingham, donde me formo profesional y personalmente. Mi deseo de aprender me ha llevado a ser autodidacta, complementando mi formación universitaria y explorando diversas tecnologías a través de proyectos personales. Me apasiona el desarrollo de software y la resolución de problemas. Valoro la importancia del trabajo en equipo y la comunicación, creyendo que colaborar es esencial para el crecimiento.
-                Estoy abierto a nuevas oportunidades y aprendizajes. ¡No dudes en contactarme para colaborar o charlar sobre tecnología!
-            </p>
 
-            <div class="col col-btn">
-                <button class="button-58" role="button">
-                    <span class="text">Ir a Proyectos</span>
-                </button>
-            </div>
-        </div>
-
-    </div> 
-
+    <!-- row skill -->
     <div class="row row-skills">
 
         <div class="col col-titulo">
@@ -51,7 +60,7 @@
         <div class="col-xl-12 col-herramientas">
             <ul class="card-list">
                 <li *ngFor="let item of listLenguajes" class="card-item">
-                    <div class="card">
+                    <div class="card-skill">
                         <div class="card-front">
                             <img [src]="item.imagen" alt="">
                         </div>
@@ -67,6 +76,175 @@
     </div>
 
 
+    <!-- row proyectos -->
+
+    <div class="row row-proyectos">
+        <div class="col-lg-12 d-flex flex-column py-3 mb-4 mt-5">
+          <h1 class="text-center">Algunos proyectos</h1>
+          <div class="row">
+            <div class="col d-flex flex-row flex-wrap justify-content-center align-items-center py-3 mb-3 col-cards">
+              <div class="card d-flex flex-column flex-lg-row" style="width: 80%;" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                <!-- Imagen del proyecto -->
+                <div class="card-header col-12 col-lg-4">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain"
+                    alt="Imagen del proyecto"
+                    
+                  />
+                </div>
+                <!-- Contenido del proyecto -->
+                <div class="card-body col-12 col-lg-8">
+                  <h5>Bookstore v1</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique neque iure consectetur repellat architecto dolores
+                    obcaecati ut praesentium quisquam quasi, nihil aperiam illo
+                    impedit minus voluptatem, pariatur corporis dolorum quo.
+                  </p>
+                  <ul class="d-flex flex-row"> 
+                    <li class="py-3 m-3">
+                      <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--  -->
+
+            <!-- card 2 -->
+            <div class="card d-flex flex-column flex-lg-row py-3 m-5" style="width: 80%;" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                <!-- Imagen del proyecto -->
+                <div class="card-header col-12 col-lg-4">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain"
+                    alt="Imagen del proyecto"
+                    
+                  />
+                </div>
+                <!-- Contenido del proyecto -->
+                <div class="card-body col-12 col-lg-8">
+                  <h5>Bookstore v1</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique neque iure consectetur repellat architecto dolores
+                    obcaecati ut praesentium quisquam quasi, nihil aperiam illo
+                    impedit minus voluptatem, pariatur corporis dolorum quo.
+                  </p>
+                  <ul class="d-flex flex-row"> 
+                    <li class="py-3 m-3">
+                      <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            <!--  -->
+
+            <!-- card 3 -->
+            <div class="card d-flex flex-column flex-lg-row py-3 m-5" style="width: 80%;" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
+                <!-- Imagen del proyecto -->
+                <div class="card-header col-12 col-lg-4">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain"
+                    alt="Imagen del proyecto"
+                    
+                  />
+                </div>
+                <!-- Contenido del proyecto -->
+                <div class="card-body col-12 col-lg-8">
+                  <h5>Bookstore v1</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Similique neque iure consectetur repellat architecto dolores
+                    obcaecati ut praesentium quisquam quasi, nihil aperiam illo
+                    impedit minus voluptatem, pariatur corporis dolorum quo.
+                  </p>
+                  <ul class="d-flex flex-row"> 
+                    <li class="py-3 m-3">
+                      <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                    <li class="py-3 m-3">
+                        <img src="https://i.postimg.cc/LXwfM9JN/nestjs.png" alt="NestJS" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            <!--  -->
+
+            </div>
+
+            <h5 class="text-center">Podes ver más en mi repositorio de github <a href="">Github</a></h5>
+
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="row row-contacto">
+        <div class="col-lg-12 d-flex flex-column justify-content-center align-items-center py-3 mb-4">
+            <form class="form py-4 mb-4">
+                <div class="title mb-4" >Contactame</div>
+                <input type="text" placeholder="Ingrese su email" class="input">
+                <textarea placeholder=""></textarea>
+                 
+                <button class="mt-4">Enviar</button>
+            </form>
+        </div>
+      </div>
+
+
+      <div class="row row-footer">
+        <div class="col  py-6 m-4">
+            <ul class="d-flex flex-row justify-content-center align-items-center" style="list-style: none;">
+                <a href=""><li class="py-4 m-4"  style="font-size: 40px; color: rgb(52, 52, 204);"><i class="bi bi-linkedin"></i></li></a>
+                <a href=""><li class="py-4 m-4"  style="font-size: 40px; color: rgb(174, 36, 192);"><i class="bi bi-github"></i></li></a>
+            </ul>
+        </div>
+      </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    
     <div class="row row-proyectos">
         <div class="col col-titulo-proyectos">
             <h1>Proyectos</h1>
@@ -74,7 +252,7 @@
 
         <div class="col col-proyectos">
 
-              <!-- proeycto 1 -->
+     
               <div class="row row-proyecto">
 
                 <div class="col col-img-proyecto">
@@ -98,7 +276,7 @@
 
               </div>
 
-               <!-- proeycto 2 -->
+     
                <div class="row row-proyecto">
 
                 <div class="col col-img-proyecto">
@@ -122,7 +300,6 @@
 
               </div>
 
-               <!-- proeycto 3 -->
                <div class="row row-proyecto">
 
                 <div class="col col-img-proyecto">
@@ -153,4 +330,29 @@
 
 
 
-</div>
+</div> -->
+
+
+
+ <!-- row about me -->
+ <!-- <div class="row row-about-me d-flex flex-row">
+    <div class="col-lg-4 d-flex justify-content-center py-4 mb-4 col-img-descripcion">
+        <img src="https://i.postimg.cc/3wC622K5/programing-code-logo-icon-3d-render-568120-2147-1.png" alt="Icono de programación">
+    </div>
+
+    <div class="col-lg-8 d-flex flex-column justify-content-center py-4 mb-4  col-descripcion">
+        <h1>Sobre Mí</h1>
+        
+        <p>
+            Soy estudiante en la Universidad Nacional de Hurlingham, donde me formo profesional y personalmente. Mi deseo de aprender me ha llevado a ser autodidacta, complementando mi formación universitaria y explorando diversas tecnologías a través de proyectos personales. Me apasiona el desarrollo de software y la resolución de problemas. Valoro la importancia del trabajo en equipo y la comunicación, creyendo que colaborar es esencial para el crecimiento.
+            Estoy abierto a nuevas oportunidades y aprendizajes. ¡No dudes en contactarme para colaborar o charlar sobre tecnología!
+        </p>
+
+        <div class="col col-btn">
+            <button class="button-58" role="button">
+                <span class="text">Ir a Proyectos</span>
+            </button>
+        </div>
+    </div>
+
+</div>  -->
