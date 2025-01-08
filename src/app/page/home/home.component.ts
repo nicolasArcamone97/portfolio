@@ -30,23 +30,23 @@ export class HomeComponent implements OnInit{
     ];
 
     this.listProyectos = [
-      {titulo: 'bookstore v1', descripcion:"Esta es la descripcion de la bookstore", listLenguajes: [
+      {titulo: 'bookstore v1', descripcion:"Proyecto crado de forma individual a fin de implementar mi aprendizaje autodidacta con Nest Js y Angular", listLenguajes: [
         { nombre:'Nest Js', imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', descripcion: 'Lenguaje que lo usan solo los cracks' },
         { nombre: 'Angular', imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', descripcion: 'Framework de desarrollo web basado en TypeScript' },
         { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }],
-      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain'
+      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain',listConceptos:["CRUD"],cantIntegrantes:1
       },
-      {titulo: 'bookstore v1', descripcion:"Esta es la descripcion de la bookstore", listLenguajes: [
+      {titulo: 'bookstore v1', descripcion:"Proyecto crado de forma individual a fin de implementar mi aprendizaje autodidacta con Nest Js y Angular", listLenguajes: [
         { nombre:'Nest Js', imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', descripcion: 'Lenguaje que lo usan solo los cracks' },
         { nombre: 'Angular', imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', descripcion: 'Framework de desarrollo web basado en TypeScript' },
         { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }],
-      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain'
+      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain',listConceptos:["CRUD"],cantIntegrantes:1
       },
-      {titulo: 'bookstore v1', descripcion:"Esta es la descripcion de la bookstore", listLenguajes: [
+      {titulo: 'bookstore v1', descripcion:"Proyecto crado de forma individual a fin de implementar mi aprendizaje autodidacta con Nest Js y Angular", listLenguajes: [
         { nombre:'Nest Js', imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', descripcion: 'Lenguaje que lo usan solo los cracks' },
         { nombre: 'Angular', imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', descripcion: 'Framework de desarrollo web basado en TypeScript' },
         { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }],
-      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain'
+      portada:'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain',listConceptos:["CRUD"],cantIntegrantes:1
       }
     ]
 
