@@ -101,7 +101,13 @@
                 <div class="card-body col-12 col-lg-8">
                   <h5>{{proyecto.titulo}}</h5>
                   <p>{{proyecto.descripcion}}</p>
-                  <ul class="d-flex flex-row  list-unstyled p-0">
+                  <p >Habilidades Desarrolladas:</p>
+                  <div class="row">
+                    <div *ngFor="let lenguaje of proyecto.listConceptos" class="col-12 col-sm-4 mb-2">
+                      <li class="list-group-item" style="color: #6e2584; list-style: none;">{{ lenguaje }}</li>
+                    </div>
+                  </div>
+                  <ul class="d-flex flex-row  list-unstyled p-0 mt-3">
                     <li *ngFor="let lenguaje of proyecto.listLenguajes" class="d-flex me-3">
                       <img [src]="lenguaje.imagen" alt="" style="max-height: 50px;">
                     </li>
