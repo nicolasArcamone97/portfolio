@@ -48,7 +48,87 @@ export class HomeComponent implements OnInit{
           'Arquitectura MVC',
           'Manejo de errores'
         ]
+      },
+      {
+        titulo: "Dashboard de Monitoreo",
+        descripcion: "Un sistema de monitoreo responsive desarrollado en 7 días como parte de un challenge laboral. Incluye funcionalidades como autenticación con JWT, CRUD de plantas, y consumo de APIs externas para información sobre países. Además, sigue un diseño establecido en Figma, asegurando una interfaz intuitiva y profesional.",
+        listLenguajes: [
+          {
+            nombre: "Spring Boot",
+            imagen: 'https://i.postimg.cc/bwZhZqrQ/spring.png',
+            descripcion: "Framework para desarrollo de aplicaciones backend en Java, ideal para servicios robustos y escalables."
+          },
+          {
+            nombre: "Angular",
+            imagen: "https://i.postimg.cc/G2x0W2g1/angular-1.png",
+            descripcion: "Framework de desarrollo frontend basado en TypeScript, usado para construir interfaces web interactivas."
+          },
+          {
+            nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' 
+          }
+        ],
+        portada: "https://th.bing.com/th/id/OIP.x9lsix3Z_o89rXThDh9tEgHaEK?pid=ImgDet&rs=1",
+        integrantes: 1,
+        listConceptos: [
+          "CRUD completo de plantas",
+          "Autenticación con JWT",
+          "Responsive Design",
+          "Consumo de APIs de terceros",
+          "Implementación de diseño basado en Figma",
+          "Arquitectura modular con separación de responsabilidades"
+        ]
+      },
+      {
+        titulo: "Gestor de tareas",
+        descripcion: "Un gestor de tareas que permite a los usuarios crear, editar, eliminar y organizar sus tareas de forma eficiente. Incluye autenticación segura con JWT, integración con Google para iniciar sesión, y un diseño responsive optimizado para dispositivos móviles y escritorio.",
+        listLenguajes: [
+          {
+            nombre: "Nest Js",
+            imagen: "https://i.postimg.cc/LXwfM9JN/nestjs.png",
+            descripcion: "Framework backend para construir aplicaciones robustas y escalables."
+          },
+          {
+            nombre: "Angular",
+            imagen: "https://i.postimg.cc/G2x0W2g1/angular-1.png",
+            descripcion: "Framework de desarrollo frontend basado en TypeScript, ideal para crear interfaces de usuario interactivas."
+          },
+          {
+            nombre: "MySQL",
+            imagen: "https://i.postimg.cc/W4rc7SMz/mysql.png",
+            descripcion: "Sistema de gestión de bases de datos relacional, utilizado para manejar la persistencia de tareas y usuarios."
+          }
+        ],
+        portada: "https://th.bing.com/th/id/OIP.wUeIzCVp6ByE5-JaQRmB8AHaEK?pid=ImgDet&rs=1",
+        integrantes: 1,
+        listConceptos: [
+          "CRUD completo de tareas",
+          "Autenticación JWT",
+          "Google (OAuth)",
+          "MVC",
+          "Manejo de errores en el backend"
+        ]
+      },
+      {
+        titulo: "Cinemarket v1",
+        descripcion: "Proyecto de una materia de la universidad su desarrollado fue con React JS que permite a los usuarios explorar y buscar películas a través de una API de terceros. La aplicación proporciona detalles de las películas, incluyendo sinopsis, calificaciones y géneros. Es completamente frontend y cuenta con un diseño atractivo y responsive.",
+        listLenguajes: [
+          {
+            nombre: "React JS",
+            imagen: 'https://i.postimg.cc/Y9HKDg33/react.png',
+            descripcion: "Biblioteca de JavaScript para construir interfaces de usuario interactivas."
+          },
+          
+        ],
+        portada: "https://th.bing.com/th/id/OIP.bLAxNFP5-FBbIaDmdADytgHaEK?pid=ImgDet&rs=1",
+        integrantes: 1,
+        listConceptos: [
+          "Consumo de API externa de películas",
+          "Diseño responsive",
+        ]
       }
+      
+      
+      
     ]
 
 
