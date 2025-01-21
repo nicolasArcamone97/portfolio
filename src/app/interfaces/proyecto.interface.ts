@@ -8,4 +8,5 @@ export interface Proyecto {
     listLenguajes: Lenguaje[]
     portada:string
     integrantes:number
+    url:string
 }

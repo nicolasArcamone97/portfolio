@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit{
           { nombre: 'Angular', imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', descripcion: 'Framework de desarrollo web basado en TypeScript' },
           { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }
         ],
-        portada: 'https://th.bing.com/th/id/OIP.o92q1xkGZqhHykgzPUEJggHaEo?rs=1&pid=ImgDetMain',
+        portada: 'https://i.postimg.cc/ryxbWJkG/Captura-de-pantalla-2025-01-20-233119.png',
         integrantes: 1,
         listConceptos: [
           'CRUD completo',
@@ -47,7 +47,8 @@ export class HomeComponent implements OnInit{
           'ORM',
           'Arquitectura MVC',
           'Manejo de errores'
-        ]
+        ],
+        url:'https://bookstore-v1-demo.netlify.app/'
       },
       {
         titulo: "Dashboard de Monitoreo",
@@ -67,7 +68,7 @@ export class HomeComponent implements OnInit{
             nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' 
           }
         ],
-        portada: "https://th.bing.com/th/id/OIP.x9lsix3Z_o89rXThDh9tEgHaEK?pid=ImgDet&rs=1",
+        portada: "https://i.postimg.cc/4xNFDRhw/Captura-de-pantalla-2025-01-20-232946.png",
         integrantes: 1,
         listConceptos: [
           "CRUD completo de plantas",
@@ -76,7 +77,8 @@ export class HomeComponent implements OnInit{
           "Consumo de APIs de terceros",
           "Implementación de diseño basado en Figma",
           "Arquitectura modular con separación de responsabilidades"
-        ]
+        ],
+        url: 'https://dashboard-monitoreo-demo.netlify.app'
       },
       {
         titulo: "Gestor de tareas",
@@ -106,7 +108,8 @@ export class HomeComponent implements OnInit{
           "Google (OAuth)",
           "MVC",
           "Manejo de errores en el backend"
-        ]
+        ],
+        url:'https://github.com/nicolasArcamone97/nestJs-gestorTareas'
       },
       {
         titulo: "Cinemarket v1",
@@ -119,12 +122,13 @@ export class HomeComponent implements OnInit{
           },
           
         ],
-        portada: "https://th.bing.com/th/id/OIP.bLAxNFP5-FBbIaDmdADytgHaEK?pid=ImgDet&rs=1",
+        portada: "https://i.postimg.cc/Bb0mNr0T/Captura-de-pantalla-2025-01-20-233222.png",
         integrantes: 1,
         listConceptos: [
           "Consumo de API externa de películas",
           "Diseño responsive",
-        ]
+        ],
+        url: 'https://cinemarket-v2.netlify.app'
       }
       
       
