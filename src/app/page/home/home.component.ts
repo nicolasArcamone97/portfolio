@@ -21,13 +21,38 @@ export class HomeComponent implements OnInit{
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object){
     this.listLenguajes = [
-      { nombre:'Nest Js', imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', descripcion: 'Lenguaje que lo usan solo los cracks' },
-      { nombre: 'Java', imagen: 'https://i.postimg.cc/85RDTw59/java.png', descripcion: 'Lenguaje robusto y orientado a objetos' },
-      { nombre: 'Springboot', imagen: 'https://i.postimg.cc/bwZhZqrQ/spring.png', descripcion: 'Framework de Java para microservicios' },
-      { nombre: 'Angular', imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', descripcion: 'Framework de desarrollo web basado en TypeScript' },
-      { nombre: 'React', imagen: 'https://i.postimg.cc/Y9HKDg33/react.png', descripcion: 'Librería de JavaScript para construir interfaces de usuario' },
-      { nombre: 'MySQL', imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', descripcion: 'Sistema de gestión de bases de datos relacional de código abierto' }
+      { 
+        nombre: 'NestJS', 
+        imagen: 'https://i.postimg.cc/LXwfM9JN/nestjs.png', 
+        descripcion: 'Un framework progresivo de Node.js, diseñado para construir aplicaciones escalables y mantenibles.' 
+      },
+      { 
+        nombre: 'Java', 
+        imagen: 'https://i.postimg.cc/85RDTw59/java.png', 
+        descripcion: 'Un lenguaje de programación multiplataforma, altamente utilizado para aplicaciones empresariales, móviles y sistemas backend.' 
+      },
+      { 
+        nombre: 'Spring Boot', 
+        imagen: 'https://i.postimg.cc/bwZhZqrQ/spring.png', 
+        descripcion: 'Un framework poderoso de Java que simplifica el desarrollo de aplicaciones basadas en microservicios.' 
+      },
+      { 
+        nombre: 'Angular', 
+        imagen: 'https://i.postimg.cc/G2x0W2g1/angular-1.png', 
+        descripcion: 'Un framework estructurado para crear aplicaciones web modernas con TypeScript, desarrollado por Google.' 
+      },
+      { 
+        nombre: 'React', 
+        imagen: 'https://i.postimg.cc/Y9HKDg33/react.png', 
+        descripcion: 'Una librería de JavaScript para construir interfaces de usuario interactivas y componentes reutilizables.' 
+      },
+      { 
+        nombre: 'MySQL', 
+        imagen: 'https://i.postimg.cc/W4rc7SMz/mysql.png', 
+        descripcion: 'Un sistema de gestión de bases de datos relacional, ampliamente utilizado para almacenar y manejar datos de manera eficiente.' 
+      }
     ];
+    
 
     this.listProyectos = [
       {
